@@ -1,0 +1,65 @@
+{
+    "inventario":[
+        {
+            "articleId":1,
+            "category":"Guajolota",
+            "type":"Verde",
+            "name":"Guajolota de Tamal Verde",
+            "price":25,
+            "image":"https://i.ibb.co/WPCJ9VF/G-VERDE.png"
+        },
+        {
+            "articleId":2,
+            "category":"Guajolota",
+            "type":"Mole",
+            "name":"Guajolota de Tamal de mole",
+            "price":25,
+            "image":"https://i.ibb.co/BZ1mjnf/G-MOLE.png"
+        },
+        {
+            "articleId":3,
+            "category":"Guajolota",
+            "type":"Guayaba",
+            "name":"Guajolota de Tamal de Guayaba",
+            "price":25,
+            "image":"https://i.ibb.co/NjT8LdV/G-GUAYABA.png"
+        },
+        {
+            "articleId":4,
+            "category":"Guajolota",
+            "type":"Piña",
+            "name":"Guajolota de Tamal de Piña",
+            "price":25,
+            "image":"https://i.ibb.co/MMByc0p/G-PI-A.png"
+        },
+        {
+            "articleId":5,
+            "category":"Guajolota",
+            "type":"Pasas",
+            "name":"Guajolota de Tamal de pasas",
+            "price":25,
+            "image":"https://i.ibb.co/tmxPnxL/G-PASAS.png"
+        },
+        {
+            "articleId":6,
+            "category":"Bebida",
+            "type":"Champurrado",
+            "price":12,
+            "image":"https://i.ibb.co/NWrfLYG/bchampurrado.png"
+        },
+        {
+            "articleId":7,
+            "category":"Bebida",
+            "type":"Atole de Arroz",
+            "price":12,
+            "image":""
+        },
+        {
+            "articleId":8,
+            "category":"Bebida",
+            "type":"Chocolate Caliente",
+            "price":12,
+            "image":""
+        }
+    ]
+ }
