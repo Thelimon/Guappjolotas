@@ -39,27 +39,73 @@
             "name":"Guajolota de Tamal de pasas",
             "price":25,
             "image":"https://i.ibb.co/tmxPnxL/G-PASAS.png"
-        },
+        }
+    ],
+    "bebidas":[
         {
-            "articleId":6,
+            "articleId":1,
             "category":"Bebida",
             "type":"Champurrado",
             "price":12,
             "image":"https://i.ibb.co/NWrfLYG/bchampurrado.png"
         },
         {
-            "articleId":7,
+            "articleId":2,
             "category":"Bebida",
             "type":"Atole de Arroz",
             "price":12,
-            "image":""
+            "image":"https://i.ibb.co/ydRMCQs/barrozconleche.png"
         },
         {
-            "articleId":8,
+            "articleId":3,
             "category":"Bebida",
             "type":"Chocolate Caliente",
             "price":12,
-            "image":""
+            "image":"https://i.ibb.co/vcGTR8z/bchocolate.png"
+        },
+        {
+            "articleId":4,
+            "category":"Bebida",
+            "type":"Chocolate Caliente",
+            "price":12,
+            "image":"https://i.ibb.co/vcGTR8z/bchocolate.png"
+        }
+    ],
+    "Tamales":[
+        {
+            "articleId":1,
+            "category":"Tamal",
+            "type":"Tamal Verde",
+            "price":14,
+            "foto":"https://i.ibb.co/2NLHCh4/T-VERDE.png"
+        },
+        {
+            "articleId":2,
+            "category":"Tamal",
+            "type":"Tamal de Mole",
+            "price":14,
+            "image":"https://i.ibb.co/yRyqG0V/T-MOLE.png"
+        },
+        {
+            "artcileId":3,
+            "category":"Tamal",
+            "type":"Tamal de Guayaba",
+            "price":14,
+            "image":"https://i.ibb.co/xLrTqbB/T-GUAYABA.png"
+        },
+        {
+            "articleId":4,
+            "category":"Tamal",
+            "type":"Tamal de Piña",
+            "price":14,
+            "image":"https://i.ibb.co/z8QLfdS/T-PI-A.png"
+        },
+        {
+            "idArticulo":5,
+            "category":"Tamal",
+            "type":"Tamal de Pasas",
+            "price":14,
+            "image":"https://i.ibb.co/qxhW8r9/T-PASAS.png"
         }
     ]
  }
