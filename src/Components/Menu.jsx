@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import CategorieList from './CategorieList'
 import { createGlobalStyle } from 'styled-components';
 import { Cart as CartP } from '@styled-icons/boxicons-regular/Cart';
+import { Search } from '@styled-icons/boxicons-regular/Search'
 
 const GlobalStyle = createGlobalStyle`
     body{
@@ -32,7 +33,7 @@ font-size: 34px;
 line-height: 41px;
 text-align: Left;`
 
-const Search = styled.div`
+const SearchBar = styled.div`
 height: 60px;
 width: 312px;
 margin: auto;
@@ -42,6 +43,11 @@ background: rgba(0, 0, 0, 0.25);
 display: flex;
 justify-content: space-around;
 align-items: center;`
+
+const SearchIcon = styled.div`
+    width: 24px;
+    height: 24px;
+    opacity: 0.3;`
 
 const SearchImput = styled.input`
 width: 231px;
@@ -64,10 +70,9 @@ justify-content: space-between;`
 const CategorieItem = styled.a`
 color: #9A9A9D;
 text-decoration: none;
-:active {
-    color: #FA4A0C;
-    border-bottom: #FA4A0C;
-} `
+font-weight: 400;
+font-size: 17px;
+line-height: 21px;`
 
 const Cart = styled.div`
     position: absolute;
@@ -91,6 +96,10 @@ export default class Menu extends Component {
     }
 
     render() {
+
+        var style_a = { color: "#FA4A0C", textDecoration: "underline" };
+        var style = {}
+
         return (
             <div>
                 <GlobalStyle />
@@ -101,19 +110,17 @@ export default class Menu extends Component {
                     </Cart>
                 </MainRow>
                 <StyleH1>Nada como una Guajolota para empezar el día</StyleH1>
-                <Search>
-                    <i>Bu</i>
+                <SearchBar>
+                    <SearchIcon><Search /></SearchIcon>
                     <SearchImput type="search" id="mySearch" name="search" placeholder="Sabor de guajolota, bebida..." />
-                </Search>
+                </SearchBar>
                 <CategorieItems>
-                    <CategorieItem onClick={() => this.changeCategorie('Guajolota')}>Guajalotas</CategorieItem>
-                    <CategorieItem onClick={() => this.changeCategorie('Bebida')}>Bebidas</CategorieItem>
-                    <CategorieItem onClick={() => this.changeCategorie('Tamal')}>Tamales</CategorieItem>
+                    <CategorieItem onClick={() => this.changeCategorie('Guajolota')} style={this.state.categorieActive === 'Guajolota' ? style_a : style}>Guajalotas</CategorieItem>
+                    <CategorieItem onClick={() => this.changeCategorie('Bebida')} style={this.state.categorieActive === 'Bebida' ? style_a : style}>Bebidas</CategorieItem>
+                    <CategorieItem onClick={() => this.changeCategorie('Tamal')} style={this.state.categorieActive === 'Tamal' ? style_a : style}>Tamales</CategorieItem>
                 </CategorieItems>
                 <CategorieList categorie={this.state.categorieActive}></CategorieList>
             </div>
         )
     }
 }
-
-

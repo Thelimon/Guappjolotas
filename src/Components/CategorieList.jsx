@@ -25,7 +25,8 @@ cursor: pointer
 ;`
 
 const CategorieImg = styled.div`
-position: relative;`
+position: relative;
+text-align: center;`
 
 const EllipseImg = styled.img`
 position:absolute;
@@ -37,23 +38,24 @@ z-index: 1;`
 
 const ProductImg = styled.img`
 position:absolute;
-top: 2px;
+bottom: -70px;
 left: 0px;
 z-index: 2;`
 
 const CategorieText = styled.div`
 position: absolute;
 left: 136px;
-width: 184px;`
+width: 184px;
+text-decoration: none;`
 
 const ProductName = styled.p`
-font-style: 600 !important;
+font-weight: 600;
 font-size: 17px;
 line-height: 21px;
 text-align: Left;`
 
 const ProductPrice = styled.p`
-font-style: 600 !important;
+font-weight: 600;
 font-size: 14px;
 line-height: 17px;
 text-align: Left;
