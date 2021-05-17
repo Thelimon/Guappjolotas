@@ -1,5 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './containers/App.jsx';
+import { Container } from './styles/GlobalDetail'
+import App from './Routes/App';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+  <React.StrictMode>
+    <Container>
+      <App />
+    </Container>
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+
+

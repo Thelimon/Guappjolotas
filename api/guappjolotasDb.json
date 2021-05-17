@@ -1,7 +1,7 @@
 {
-    "inventario": [
+    "Guajolota": [
         {
-            "articleId": 1,
+            "id": 1,
             "category": "Guajolota",
             "type": "Verde",
             "name": "Guajolota de Tamal Verde",
@@ -10,7 +10,7 @@
             "elipse": "https://i.ibb.co/HYzhV3J/Ellipse-G1.png"
         },
         {
-            "articleId": 2,
+            "id": 2,
             "category": "Guajolota",
             "type": "Mole",
             "name": "Guajolota de Tamal de mole",
@@ -19,7 +19,7 @@
             "elipse": "https://i.ibb.co/d6JLH8r/Ellipse-G2.png"
         },
         {
-            "articleId": 3,
+            "id": 3,
             "category": "Guajolota",
             "type": "Guayaba",
             "name": "Guajolota de Tamal de Guayaba",
@@ -28,7 +28,7 @@
             "elipse": "https://i.ibb.co/SJn56pJ/Ellipse-G3.png"
         },
         {
-            "articleId": 4,
+            "id": 4,
             "category": "Guajolota",
             "type": "Piña",
             "name": "Guajolota de Tamal de Piña",
@@ -37,7 +37,7 @@
             "elipse": "https://i.ibb.co/T2BQNdw/Ellipse-G4.png"
         },
         {
-            "articleId": 5,
+            "id": 5,
             "category": "Guajolota",
             "type": "Pasas",
             "name": "Guajolota de Tamal de pasas",
@@ -46,46 +46,46 @@
             "elipse": "https://i.ibb.co/17SJJdT/Ellipse-G5.png"
         }
     ],
-    "bebidas": [
+    "Bebida": [
         {
-            "articleId": 1,
+            "id": 1,
             "category": "Bebida",
             "type": "Champurrado",
             "price": 12,
             "image": "https://i.ibb.co/NWrfLYG/bchampurrado.png"
         },
         {
-            "articleId": 2,
+            "id": 2,
             "category": "Bebida",
             "type": "Atole de Arroz",
             "price": 12,
             "image": "https://i.ibb.co/ydRMCQs/barrozconleche.png"
         },
         {
-            "articleId": 3,
+            "id": 3,
             "category": "Bebida",
             "type": "Chocolate Caliente",
             "price": 12,
             "image": "https://i.ibb.co/vcGTR8z/bchocolate.png"
         },
         {
-            "articleId": 4,
+            "id": 4,
             "category": "Bebida",
             "type": "Chocolate Caliente",
             "price": 12,
             "image": "https://i.ibb.co/vcGTR8z/bchocolate.png"
         }
     ],
-    "Tamales": [
+    "Tamal": [
         {
-            "articleId": 1,
+            "id": 1,
             "category": "Tamal",
             "type": "Tamal Verde",
             "price": 14,
             "foto": "https://i.ibb.co/2NLHCh4/T-VERDE.png"
         },
         {
-            "articleId": 2,
+            "id": 2,
             "category": "Tamal",
             "type": "Tamal de Mole",
             "price": 14,
@@ -99,7 +99,7 @@
             "image": "https://i.ibb.co/xLrTqbB/T-GUAYABA.png"
         },
         {
-            "articleId": 4,
+            "id": 4,
             "category": "Tamal",
             "type": "Tamal de Piña",
             "price": 14,
