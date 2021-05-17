@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Menu from '../components/Menu.jsx'
-import Detail from '../components/Detail.jsx'
+import Menu from '../Components/Menu.jsx'
+import Detail from '../Components/Detail.jsx'
 
 
 
