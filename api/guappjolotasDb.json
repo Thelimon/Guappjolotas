@@ -102,7 +102,7 @@
             "elipse": "https://i.ibb.co/d6JLH8r/Ellipse-G2.png"
         },
         {
-            "artcileId": 3,
+            "id": 3,
             "category": "Tamal",
             "type": "Tamal de Guayaba",
             "price": 14,
@@ -118,7 +118,7 @@
             "elipse": "https://i.ibb.co/T2BQNdw/Ellipse-G4.png"
         },
         {
-            "idArticulo": 5,
+            "id": 5,
             "category": "Tamal",
             "type": "Tamal de Pasas",
             "price": 14,
