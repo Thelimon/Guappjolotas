@@ -37,8 +37,6 @@ z-index: 1;`
 
 const ProductImg = styled.img`
 position:absolute;
-height: 75px;
-width: 80px;
 top: 2px;
 left: 0px;
 z-index: 2;`
@@ -72,13 +70,19 @@ export default class CategorieList extends Component {
     }
 
     fetchProducts = () => {
-        fetch('http://localhost:3004/Guajolota')
+        fetch(`http://localhost:3004/${this.props.categorie}`)
             .then(response => response.json())
             .then(product => this.setState({ products: product }))
     }
 
     componentDidMount() {
         this.fetchProducts()
+    }
+
+    componentDidUpdate(prevProps, prevState) {
+        if (prevProps.categorie !== this.props.categorie) {
+            this.fetchProducts()
+        }
     }
 
     render() {
@@ -88,20 +92,20 @@ export default class CategorieList extends Component {
                     {
                         this.state.products.map(product => {
                             return (
-                                <CategorieLi key={product.id}>
+                                <CategorieLi key={`${product.category}-${product.id}`}>
                                     <Link to={{
                                         pathname: `/${product.category}/${product.id}`,
                                         tipo: product.category,
                                         id: product.articleId
                                     }}>
-                                    <CategorieImg>
-                                        <EllipseImg src={product.elipse}></EllipseImg>
-                                        <ProductImg src={product.image}></ProductImg>
-                                    </CategorieImg>
-                                    <CategorieText>
-                                        <ProductName>{product.type}</ProductName>
-                                        <ProductPrice>${product.price} MXN</ProductPrice>
-                                    </CategorieText>
+                                        <CategorieImg>
+                                            <EllipseImg src={product.elipse}></EllipseImg>
+                                            <ProductImg src={product.image}></ProductImg>
+                                        </CategorieImg>
+                                        <CategorieText>
+                                            <ProductName>{product.type}</ProductName>
+                                            <ProductPrice>${product.price} MXN</ProductPrice>
+                                        </CategorieText>
                                     </Link>
                                 </CategorieLi>
 
