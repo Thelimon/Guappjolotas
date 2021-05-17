@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { Component } from 'react'
 import styled from 'styled-components'
 import CategorieList from './CategorieList'
 import { createGlobalStyle } from 'styled-components';
-import {Cart as CartP} from '@styled-icons/boxicons-regular/Cart';
+import { Cart as CartP } from '@styled-icons/boxicons-regular/Cart';
 
 const GlobalStyle = createGlobalStyle`
     body{
@@ -77,30 +77,43 @@ const Cart = styled.div`
     top: 25px;
     opacity: 0.3;`
 
-const Menu = () => {
-    return (
-        <div>
-            <GlobalStyle />
-            <MainRow>
-                <LogoImg src='https://i.ibb.co/DMV99gF/title.png' />
-                <Cart>
-                    <CartP />
-                </Cart>
-            </MainRow>
-            <StyleH1>Nada como una Guajolota para empezar el día</StyleH1>
-            <Search>
-                <i>Bu</i>
-                <SearchImput type="search" id="mySearch" name="search" placeholder="Sabor de guajolota, bebida..." />
-            </Search>
-            <CategorieItems>
-                <CategorieItem>Guajalotas</CategorieItem>
-                <CategorieItem>Bebidas</CategorieItem>
-                <CategorieItem>Tamales</CategorieItem>
-            </CategorieItems>
-            <CategorieList></CategorieList>
-        </div>
-    )
+export default class Menu extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            categorieActive: 'Guajolota',
+        }
+    }
+
+    changeCategorie(categorie) {
+        this.setState({ categorieActive: categorie })
+        console.log(categorie)
+    }
+
+    render() {
+        return (
+            <div>
+                <GlobalStyle />
+                <MainRow>
+                    <LogoImg src='https://i.ibb.co/DMV99gF/title.png' />
+                    <Cart>
+                        <CartP />
+                    </Cart>
+                </MainRow>
+                <StyleH1>Nada como una Guajolota para empezar el día</StyleH1>
+                <Search>
+                    <i>Bu</i>
+                    <SearchImput type="search" id="mySearch" name="search" placeholder="Sabor de guajolota, bebida..." />
+                </Search>
+                <CategorieItems>
+                    <CategorieItem onClick={() => this.changeCategorie('Guajolota')}>Guajalotas</CategorieItem>
+                    <CategorieItem onClick={() => this.changeCategorie('Bebida')}>Bebidas</CategorieItem>
+                    <CategorieItem onClick={() => this.changeCategorie('Tamal')}>Tamales</CategorieItem>
+                </CategorieItems>
+                <CategorieList categorie={this.state.categorieActive}></CategorieList>
+            </div>
+        )
+    }
 }
 
-export default Menu;
 
