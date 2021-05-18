@@ -1,4 +1,18 @@
 {
+    "Categories": [
+        {
+            "id": 1,
+            "category": "Guajolota"
+        },
+        {
+            "id": 2,
+            "category": "Bebida"
+        },
+        {
+            "id": 3,
+            "category": "Tamal"
+        }
+    ],
     "Guajolota": [
         {
             "id": 1,

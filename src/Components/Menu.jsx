@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import CategorieList from './CategorieList'
+import CategorieItem from './CategorieItem';
 import { createGlobalStyle } from 'styled-components';
 import { Cart as CartP } from '@styled-icons/boxicons-regular/Cart';
 import { Search } from '@styled-icons/boxicons-regular/Search'
@@ -67,13 +68,6 @@ margin-top: 40px;
 display: flex;
 justify-content: space-between;`
 
-const CategorieItem = styled.a`
-color: #9A9A9D;
-text-decoration: none;
-font-weight: 400;
-font-size: 17px;
-line-height: 21px;`
-
 const Cart = styled.div`
     position: absolute;
     width: 24px;
@@ -88,6 +82,7 @@ export default class Menu extends Component {
         this.state = {
             categorieActive: 'Guajolota',
         }
+        this.changeCategorie = this.changeCategorie.bind(this)
     }
 
     changeCategorie(categorie) {
@@ -96,9 +91,6 @@ export default class Menu extends Component {
     }
 
     render() {
-
-        var style_a = { color: "#FA4A0C", textDecoration: "underline" };
-        var style = {}
 
         return (
             <div>
@@ -115,9 +107,7 @@ export default class Menu extends Component {
                     <SearchImput type="search" id="mySearch" name="search" placeholder="Sabor de guajolota, bebida..." />
                 </SearchBar>
                 <CategorieItems>
-                    <CategorieItem onClick={() => this.changeCategorie('Guajolota')} style={this.state.categorieActive === 'Guajolota' ? style_a : style}>Guajalotas</CategorieItem>
-                    <CategorieItem onClick={() => this.changeCategorie('Bebida')} style={this.state.categorieActive === 'Bebida' ? style_a : style}>Bebidas</CategorieItem>
-                    <CategorieItem onClick={() => this.changeCategorie('Tamal')} style={this.state.categorieActive === 'Tamal' ? style_a : style}>Tamales</CategorieItem>
+                    <CategorieItem changeCategorie={this.changeCategorie} />
                 </CategorieItems>
                 <CategorieList categorie={this.state.categorieActive}></CategorieList>
             </div>

@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 import { Link } from "react-router-dom";
 
-
 const Categorie = styled.div`
 width: 312px;
 margin: auto;
@@ -61,7 +60,6 @@ line-height: 17px;
 text-align: Left;
 color: #FA4A0C;
 `
-
 
 export default class CategorieList extends Component {
     constructor(props) {
