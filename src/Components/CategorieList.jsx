@@ -37,7 +37,6 @@ z-index: 1;`
 
 const ProductImg = styled.img`
 position:absolute;
-bottom: -70px;
 left: 0px;
 z-index: 2;`
 
@@ -86,6 +85,7 @@ export default class CategorieList extends Component {
     }
 
     render() {
+
         return (
             <>
                 <Categorie>
@@ -100,7 +100,9 @@ export default class CategorieList extends Component {
                                     }}>
                                         <CategorieImg>
                                             <EllipseImg src={product.elipse}></EllipseImg>
-                                            <ProductImg src={product.image}></ProductImg>
+                                            <ProductImg src={product.image}
+                                                style={product.category === 'Guajolota' ? { top: 2 } : product.category === 'Bebida' ? { left: 30, bottom: -60 } : product.category === 'Tamal' ? { bottom: -70 } : {}}
+                                            ></ProductImg>
                                         </CategorieImg>
                                         <CategorieText>
                                             <ProductName>{product.type}</ProductName>
