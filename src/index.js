@@ -1,9 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Container } from './styles/GlobalDetail'
+import App from './Routes/App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <h1>Test</h1>
+    <Container>
+      <App />
+    </Container>
   </React.StrictMode>,
   document.getElementById('root')
 );
