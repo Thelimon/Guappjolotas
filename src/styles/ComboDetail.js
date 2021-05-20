@@ -86,7 +86,7 @@ const ContCard = styled.div`
 const CardWrapper = styled.div`
     padding: 16px;
     width: 120px;
-    height: 120px;
+    height: 130px;
 
     background: #FFFFFF;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.03);
@@ -116,7 +116,7 @@ const DescCard = styled.div`
 
     position: static;
     width: 120px;
-    height: 34px;
+    height: 30px;
     left: 16px;
     top: 88px;
 

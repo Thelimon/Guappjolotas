@@ -6,7 +6,6 @@ const ContDetail = styled.div`
     height: 200px;
     left: 80px;
     top: 0px;
-
 `;
 
 const ContImg = styled.div`
@@ -25,8 +24,9 @@ const ImgItem = styled.img`
 `;
 
 const ImgElipse = styled.img`
-    width: 165.83px;
-    height: 240px;
+    position: relative;
+    z-index: -1;
+    top: 80px;
 `;
 
 const ContDesc = styled.div`

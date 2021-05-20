@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 import { ContDetail, ContImg, ImgItem, ImgElipse, ContDesc, H1Styled, H2Precio } from '../styles/ItemDetail'
-import Gverde from '../images/G-VERDE.svg';
-import Elipse from '../images/Ellipse3.svg';
 
 export default class ItemDetail extends Component {
 
@@ -35,10 +33,8 @@ export default class ItemDetail extends Component {
             <div key={this.state.dataD.id}>
                 <ContDetail>
                     <ContImg>
-                        <ImgItem src={ this.state.dataD.image }></ImgItem>
-                        <ImgElipse src={ this.state.dataD.elipse }></ImgElipse>
-                        {/* <ImgItem src={ Gverde }></ImgItem>
-                        <ImgElipse src={ Elipse }></ImgElipse> */}
+                        <ImgItem src={ this.state.dataD.imageD }></ImgItem>
+                        <ImgElipse src={ this.state.dataD.elipseD }></ImgElipse>
                     </ContImg>
                 </ContDetail>
                 <ContDesc>
