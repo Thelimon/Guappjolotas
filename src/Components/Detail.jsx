@@ -11,7 +11,7 @@ function Detail(props) {
         <>
             <HeaderDetail />
             <ItemDetail tipo={ props.match.params.tipo } id={ props.match.params.productId }/>
-            <ButtonAddDetail />
+            {/* <ButtonAddDetail tipo={ props.match.params.tipo }/> */}
             <SaboresDetail />
         </>
     )

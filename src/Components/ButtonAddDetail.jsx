@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { ButtonCant, ButtonMenos, ButtonMas } from '../styles/ButtonAddDetail'
 import { PlusCircle } from '@styled-icons/boxicons-regular/PlusCircle'
 import { MinusCircle } from '@styled-icons/boxicons-regular/MinusCircle'
-import ButtonAddCart from './ButtonAddCart.jsx';
 import ComboDetail from './ComboDetail.jsx';
 
 export default class ButtonAddDetail extends Component {
@@ -11,7 +10,7 @@ export default class ButtonAddDetail extends Component {
         super(props)
         this.state = {
             cantidad: 1,
-            precio: 25,
+            precio: this.props.precio,
             restar: true
         }
     }
@@ -51,7 +50,7 @@ export default class ButtonAddDetail extends Component {
                         <PlusCircle />
                     </ButtonMas>
                 </ButtonCant>
-                <ComboDetail cantidad={ this.state.cantidad } precio={ this.state.precio * this.state.cantidad}/>
+                <ComboDetail tipo={this.props.tipo} cantidad={ this.state.cantidad } precio={ this.state.precio * this.state.cantidad}/>
             </>
         )
     }

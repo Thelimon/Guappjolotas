@@ -21,7 +21,9 @@
             "name": "Guajolota de Tamal Verde",
             "price": 25,
             "image": "https://i.ibb.co/WPCJ9VF/G-VERDE.png",
-            "elipse": "https://i.ibb.co/HYzhV3J/Ellipse-G1.png"
+            "elipse": "https://i.ibb.co/HYzhV3J/Ellipse-G1.png",
+            "imageD": "https://i.ibb.co/WV5QYt5/G-VERDEdetail.png",
+            "elipseD": "https://i.ibb.co/8DndDbr/Ellipse-G1detail.png"
         },
         {
             "id": 2,
@@ -30,7 +32,9 @@
             "name": "Guajolota de Tamal de mole",
             "price": 25,
             "image": "https://i.ibb.co/BZ1mjnf/G-MOLE.png",
-            "elipse": "https://i.ibb.co/d6JLH8r/Ellipse-G2.png"
+            "elipse": "https://i.ibb.co/d6JLH8r/Ellipse-G2.png",
+            "imageD": "https://i.ibb.co/42zfnvk/G-MOLEdetail.png",
+            "elipseD": "https://i.ibb.co/R4M80cM/Ellipse-G2detail.png"
         },
         {
             "id": 3,
@@ -39,7 +43,9 @@
             "name": "Guajolota de Tamal de Guayaba",
             "price": 25,
             "image": "https://i.ibb.co/NjT8LdV/G-GUAYABA.png",
-            "elipse": "https://i.ibb.co/SJn56pJ/Ellipse-G3.png"
+            "elipse": "https://i.ibb.co/SJn56pJ/Ellipse-G3.png",
+            "imageD": "https://i.ibb.co/NjT8LdV/G-GUAYABA.png",
+            "elipseD": "https://i.ibb.co/QJJzgSX/Ellipse-DGuayaba.png"
         },
         {
             "id": 4,
@@ -48,7 +54,9 @@
             "name": "Guajolota de Tamal de Piña",
             "price": 25,
             "image": "https://i.ibb.co/MMByc0p/G-PI-A.png",
-            "elipse": "https://i.ibb.co/T2BQNdw/Ellipse-G4.png"
+            "elipse": "https://i.ibb.co/T2BQNdw/Ellipse-G4.png",
+            "imageD": "https://i.ibb.co/MMByc0p/G-PI-A.png",
+            "elipseD": "https://i.ibb.co/ThqY1n1/Ellipse-G4detail.png"
         },
         {
             "id": 5,
@@ -57,7 +65,9 @@
             "name": "Guajolota de Tamal de pasas",
             "price": 25,
             "image": "https://i.ibb.co/tmxPnxL/G-PASAS.png",
-            "elipse": "https://i.ibb.co/17SJJdT/Ellipse-G5.png"
+            "elipse": "https://i.ibb.co/17SJJdT/Ellipse-G5.png",
+            "imageD": "https://i.ibb.co/tmxPnxL/G-PASAS.png",
+            "elipseD": "https://i.ibb.co/NpGWk9Y/Ellipse-DPasas.png"
         }
     ],
     "Bebida": [
@@ -67,7 +77,9 @@
             "type": "Champurrado",
             "price": 12,
             "image": "https://i.ibb.co/dBzVBFr/B-CAFE.png",
+            "imageD": "https://i.ibb.co/YBD7Tq4/B-CHAMPURRADOdetail.png",
             "elipse": "https://i.ibb.co/HYzhV3J/Ellipse-G1.png",
+            "elipseD": "https://i.ibb.co/8DndDbr/Ellipse-G1detail.png",
             "flavor": "https://i.ibb.co/NWrfLYG/bchampurrado.png"
         },
         {
@@ -76,7 +88,9 @@
             "type": "Atole de Arroz",
             "price": 12,
             "image": "https://i.ibb.co/jGsYChY/B-ARROZ-CON-LECHE.png",
+            "imageD": "https://i.ibb.co/s6L0H65/B-ARROZ-CON-LECHEdetail.png",
             "elipse": "https://i.ibb.co/T2BQNdw/Ellipse-G4.png",
+            "elipseD": "https://i.ibb.co/ThqY1n1/Ellipse-G4detail.png",
             "flavor": "https://i.ibb.co/ydRMCQs/barrozconleche.png"
         },
         {
@@ -85,7 +99,9 @@
             "type": "Chocolate Caliente",
             "price": 12,
             "image": "https://i.ibb.co/MMR7wd6/B-CHOCOLATE.png",
+            "imageD": "https://i.ibb.co/YBD7Tq4/B-CHAMPURRADOdetail.png",
             "elipse": "https://i.ibb.co/HYzhV3J/Ellipse-G1.png",
+            "elipseD": "https://i.ibb.co/8DndDbr/Ellipse-G1detail.png",
             "flavor": "https://i.ibb.co/vcGTR8z/bchocolate.png"
         },
         {
@@ -94,7 +110,9 @@
             "type": "Café Negro",
             "price": 12,
             "image": "https://i.ibb.co/dBzVBFr/B-CAFE.png",
+            "imageD": "https://i.ibb.co/YBD7Tq4/B-CHAMPURRADOdetail.png",
             "elipse": "https://i.ibb.co/HYzhV3J/Ellipse-G1.png",
+            "elipseD": "https://i.ibb.co/8DndDbr/Ellipse-G1detail.png",
             "flavor": "https://i.ibb.co/vcGTR8z/bchocolate.png"
         }
     ],
@@ -105,7 +123,9 @@
             "type": "Tamal Verde",
             "price": 14,
             "image": "https://i.ibb.co/2NLHCh4/T-VERDE.png",
-            "elipse": "https://i.ibb.co/HYzhV3J/Ellipse-G1.png"
+            "imageD": "https://i.ibb.co/28wFFLQ/T-VERDE.png",
+            "elipse": "https://i.ibb.co/HYzhV3J/Ellipse-G1.png",
+            "elipseD": "https://i.ibb.co/8DndDbr/Ellipse-G1detail.png"
         },
         {
             "id": 2,
@@ -113,7 +133,9 @@
             "type": "Tamal de Mole",
             "price": 14,
             "image": "https://i.ibb.co/yRyqG0V/T-MOLE.png",
-            "elipse": "https://i.ibb.co/d6JLH8r/Ellipse-G2.png"
+            "imageD": "https://i.ibb.co/5Twpyjn/T-MOLE.png",
+            "elipse": "https://i.ibb.co/d6JLH8r/Ellipse-G2.png",
+            "elipseD": "https://i.ibb.co/R4M80cM/Ellipse-G2detail.png"
         },
         {
             "id": 3,
@@ -121,7 +143,9 @@
             "type": "Tamal de Guayaba",
             "price": 14,
             "image": "https://i.ibb.co/xLrTqbB/T-GUAYABA.png",
-            "elipse": "https://i.ibb.co/SJn56pJ/Ellipse-G3.png"
+            "imageD": "https://i.ibb.co/xLrTqbB/T-GUAYABA.png",
+            "elipse": "https://i.ibb.co/SJn56pJ/Ellipse-G3.png",
+            "elipseD": "https://i.ibb.co/QJJzgSX/Ellipse-DGuayaba.png"
         },
         {
             "id": 4,
@@ -129,7 +153,9 @@
             "type": "Tamal de Piña",
             "price": 14,
             "image": "https://i.ibb.co/z8QLfdS/T-PI-A.png",
-            "elipse": "https://i.ibb.co/T2BQNdw/Ellipse-G4.png"
+            "imageD": "https://i.ibb.co/z8QLfdS/T-PI-A.png",
+            "elipse": "https://i.ibb.co/T2BQNdw/Ellipse-G4.png",
+            "elipseD": "https://i.ibb.co/ThqY1n1/Ellipse-G4detail.png"
         },
         {
             "id": 5,
@@ -137,7 +163,36 @@
             "type": "Tamal de Pasas",
             "price": 14,
             "image": "https://i.ibb.co/qxhW8r9/T-PASAS.png",
-            "elipse": "https://i.ibb.co/17SJJdT/Ellipse-G5.png"
+            "imageD": "https://i.ibb.co/qxhW8r9/T-PASAS.png",
+            "elipse": "https://i.ibb.co/17SJJdT/Ellipse-G5.png",
+            "elipseD": "https://i.ibb.co/NpGWk9Y/Ellipse-DPasas.png"
+        }
+    ],
+    "Sabor":[
+        {
+            "id": 1,
+            "type": "Verde",
+            "image": "https://i.ibb.co/2tnGV2Q/SVerde.png"
+        },
+        {
+            "id": 2,
+            "type": "Mole",
+            "image": "https://i.ibb.co/KK4cqKh/SMoles.png"
+        },
+        {
+            "id": 3,
+            "type": "Guayaba",
+            "image": "https://i.ibb.co/XXPR288/SGuayaba.png"
+        },
+        {
+            "id": 4,
+            "type": "Piña",
+            "image": "https://i.ibb.co/Yy2DPRr/SPi-a.png"
+        },
+        {
+            "id": 5,
+            "type": "Pasas",
+            "image": "https://i.ibb.co/r5rHszr/SPasas.png"
         }
     ]
 }
