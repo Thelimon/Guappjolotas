@@ -76,34 +76,6 @@ const Cart = styled.div`
     top: 25px;
     opacity: 0.3;`
 
-// const Menu = () => {
-//     return (
-//         <div>
-//             <GlobalStyle />
-//             <MainRow>
-//                 <LogoImg src='https://i.ibb.co/DMV99gF/title.png' />
-//                 <Cart>
-//                     <CartP />
-//                 </Cart>
-//             </MainRow>
-//             <StyleH1>Nada como una Guajolota para empezar el día</StyleH1>
-//             <Search>
-//                 <i>Bu</i>
-//                 <SearchImput type="search" id="mySearch" name="search" placeholder="Sabor de guajolota, bebida..." />
-//             </Search>
-//             <CategorieItems>
-//                 <CategorieItem>Guajalotas</CategorieItem>
-//                 <CategorieItem>Bebidas</CategorieItem>
-//                 <CategorieItem>Tamales</CategorieItem>
-//             </CategorieItems>
-//             <CategorieList></CategorieList>
-//         </div>
-//     )
-// }
-
-// export default Menu;
-
-
 export default class Menu extends Component {
     constructor(props) {
         super(props)

@@ -18,7 +18,7 @@ export default class CategorieItem extends Component {
     }
 
     fetchCategorie = () => {
-        fetch('http://localhost:3004/Categories')
+        fetch('https://api-guapp.herokuapp.com/Categories')
             .then(response => response.json())
             .then(categoriesJSON => this.setState({ categories: categoriesJSON }))
     }
