@@ -1,56 +1,60 @@
-import React, { Component } from 'react'
-import styled from 'styled-components'
+import React, { Component } from "react";
+import styled from "styled-components";
 
 const CategorieI = styled.a`
-color: #9A9A9D;
-text-decoration: none;
-font-weight: 400;
-font-size: 17px;
-line-height: 21px;`
+  color: #9a9a9d;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+`;
 
 export default class CategorieItem extends Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            categories: [],
-            categorieActive: ''
-        }
-    }
+  constructor(props) {
+    super(props);
+    this.state = {
+      categories: [],
+      categorieActive: "",
+    };
+  }
 
-    fetchCategorie = () => {
-        fetch('https://api-guapp.herokuapp.com/Categories')
-            .then(response => response.json())
-            .then(categoriesJSON => this.setState({ categories: categoriesJSON }))
-    }
+  fetchCategorie = () => {
+    fetch("https://api-guapp.herokuapp.com/Categories")
+      .then((response) => response.json())
+      .then((categoriesJSON) => this.setState({ categories: categoriesJSON }));
+  };
 
-    componentDidMount() {
-        this.fetchCategorie()
-    }
+  componentDidMount() {
+    this.fetchCategorie();
+  }
 
-    handleClick = (categoria) => {
-        this.props.changeCategorie(categoria);
-        this.setState({ categorieActive: categoria })
-    }
+  handleClick = (categoria) => {
+    this.props.changeCategorie(categoria);
+    this.setState({ categorieActive: categoria });
+  };
 
-    render() {
-        var style_a = { color: "#FA4A0C", textDecoration: "underline" };
-        var style = {}
+  render() {
+    var style_a = { color: "#FA4A0C", textDecoration: "underline" };
+    var style = {};
 
-        return (
-            <>
-                {
-                    this.state.categories.map(categorie => {
-                        return (
-                            <CategorieI
-                                key={`${categorie.id}-${categorie.category}`}
-                                onClick={() => this.handleClick(categorie.category)}
-                                style={this.state.categorieActive === categorie.category ? style_a : style}
-                            >{categorie.category}
-                            </CategorieI>
-                        )
-                    })
-                }
-            </>
-        )
-    }
+    return (
+      <>
+        {this.state.categories.map((categorie) => {
+          return (
+            <CategorieI
+              key={`${categorie.id}-${categorie.category}`}
+              onClick={() => this.handleClick(categorie.category)}
+              style={
+                this.state.categorieActive === categorie.category
+                  ? style_a
+                  : style
+              }
+            >
+              {categorie.category}
+            </CategorieI>
+          );
+        })}
+      </>
+    );
+  }
 }
