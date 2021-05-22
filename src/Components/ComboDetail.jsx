@@ -22,11 +22,11 @@ export default class ComboDetail extends Component {
 
     fetchSabores = () => {
         if(this.props.tipo === 'Bebida'){
-            fetch('http://localhost:3004/Guajolota')
+            fetch('https://api-guapp.herokuapp.com/Guajolota')
             .then(response => response.json())
             .then(sabores => this.setState({ dataSabores: sabores, loading: false }))
         }else{
-            fetch('http://localhost:3004/Bebida')
+            fetch('https://api-guapp.herokuapp.com/Bebida')
             .then(response => response.json())
             .then(sabores => this.setState({ dataSabores: sabores, loading: false }))
         }

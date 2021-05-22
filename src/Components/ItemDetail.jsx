@@ -20,7 +20,7 @@ export default class ItemDetail extends Component {
             error: null,
         })
 
-        fetch(`http://localhost:3004/${ this.props.tipo}/${this.props.id}`)
+        fetch(`https://api-guapp.herokuapp.com/${ this.props.tipo}/${this.props.id}`)
         .then(response => response.json())
         .then(producto => this.setState({ dataD: producto, loading: false }))
     }

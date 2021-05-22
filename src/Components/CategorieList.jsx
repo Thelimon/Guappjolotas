@@ -69,7 +69,7 @@ export default class CategorieList extends Component {
     }
 
     fetchProducts = () => {
-        fetch(`http://localhost:3004/${this.props.categorie}`)
+        fetch(`https://api-guapp.herokuapp.com/${this.props.categorie}`)
             .then(response => response.json())
             .then(product => this.setState({ products: product }))
     }

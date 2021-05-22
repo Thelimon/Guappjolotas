@@ -27,7 +27,7 @@ export default class SaboresDetail extends Component {
     }
 
     fetchSabores = () => {
-        fetch('http://localhost:3004/Sabor')
+        fetch('https://api-guapp.herokuapp.com/Sabor')
         .then(response => response.json())
         .then(sabores => this.setState({ dataSabores: sabores, loading: false }))
     }
