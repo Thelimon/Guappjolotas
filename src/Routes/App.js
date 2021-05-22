@@ -3,8 +3,6 @@ import{ BrowserRouter, Route, Switch} from 'react-router-dom';
 import Menu from '../Components/Menu.jsx'
 import Detail from '../Components/Detail.jsx'
 
-
-
 function App() {
     return (
         <div>

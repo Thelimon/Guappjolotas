@@ -18,7 +18,6 @@ const ContImg = styled.div`
 const ImgItem = styled.img`
     position: absolute;
     width: 165.83px;
-    height: 165.83px;
     top: 2.5%;
     bottom: 3.51%;
 `;

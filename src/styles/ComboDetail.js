@@ -86,7 +86,7 @@ const ContCard = styled.div`
 const CardWrapper = styled.div`
     padding: 16px;
     width: 120px;
-    height: 130px;
+    height: 90px;
 
     background: #FFFFFF;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.03);
@@ -120,9 +120,7 @@ const DescCard = styled.div`
     left: 16px;
     top: 88px;
 
-
     /* Inside Auto Layout */
-
     flex: none;
     order: 1;
     align-self: stretch;

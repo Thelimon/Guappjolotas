@@ -3,9 +3,19 @@ import { ContBotonAgregarCar, BotonAgregarCar, AgregarBoton, PrecioBoton } from 
 
 function ButtonAddCart(props) {
     const precio = props.precio;
+
+    const buttonS =
+            props.tipo === 'Bebida' ?
+            {
+                height: '0px'
+            }
+            :
+            {
+                height: '101px'
+            };
     return (
         <>
-            <ContBotonAgregarCar>
+            <ContBotonAgregarCar style={buttonS}>
                 <BotonAgregarCar>
                     <AgregarBoton>Agregar { props.cantidad } al carrito</AgregarBoton>
                     <PrecioBoton>${ precio }</PrecioBoton>
