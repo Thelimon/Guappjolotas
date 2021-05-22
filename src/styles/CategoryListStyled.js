@@ -1,14 +1,15 @@
 import styled from "styled-components";
 
 const Categorie = styled.div`
+  display: grid;
+  place-items: center;
   width: 312px;
   margin: auto;
   margin-top: 24px;
-  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 1rem;
   width: 100%;
-  margin: 0 auto;
+  margin: 1rem auto;
 `;
 const CategorieLi = styled.div`
   height: 80px;
@@ -19,6 +20,9 @@ const CategorieLi = styled.div`
   padding: 16px;
   background: white;
   cursor: pointer;
+  &&:last-child{
+    margin-bottom: 2rem;
+  }
 `;
 
 const CategorieImg = styled.div`

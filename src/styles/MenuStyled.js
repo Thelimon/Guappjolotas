@@ -1,4 +1,13 @@
-import styled from "styled-components";
+import styled,  {createGlobalStyle} from "styled-components";
+
+const GlobalStyle = createGlobalStyle`
+    body{
+        background-color: #F2F2F2;
+        font-family: 'Inter', sans-serif;
+        text-align: center;
+        box-sizing: border-box;
+    }
+`;
 
 const MainRow = styled.div`
   width: 312px;
@@ -16,13 +25,14 @@ const LogoImg = styled.img`
 `;
 
 const StyleH1 = styled.h1`
+  margin-left: 2.2rem;
   font-style: bold;
   font-size: 34px;
   line-height: 41px;
   text-align: Left;
 `;
 
-const Search = styled.div`
+const SearchBar = styled.div`
   height: 60px;
   width: 312px;
   margin: auto;
@@ -32,6 +42,12 @@ const Search = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
+`;
+
+const SearchIcon = styled.div`
+  width: 24px;
+  height: 24px;
+  opacity: 0.3;
 `;
 
 const SearchImput = styled.input`
@@ -54,37 +70,23 @@ const CategorieItems = styled.div`
   justify-content: space-between;
 `;
 
-const CategorieItem = styled.a`
-  color: #9a9a9d;
-  text-decoration: none;
-  &&:active {
-    color: #fa4a0c;
-    border-bottom: #fa4a0c;
-  }
+const Cart = styled.div`
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 312px;
+  top: 25px;
+  opacity: 0.3;
 `;
-
-const GlobalStyle = createGlobalStyle`
-    body{
-        background: #F2F2F2;
-        font-family: 'Inter', sans-serif;
-        text-align: center;
-        box-sizing: border-box;
-    }    
-`;
-
-const MainContainer = styled.div`
-  display: grid;
-  place-items: center;
-`
 
 export {
+  GlobalStyle,
   MainRow,
   LogoImg,
   StyleH1,
-  Search,
+  SearchBar,
+  SearchIcon,
   SearchImput,
   CategorieItems,
-  CategorieItem,
-  GlobalStyle,
-  MainContainer
+  Cart,
 };

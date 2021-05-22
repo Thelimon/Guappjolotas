@@ -2,13 +2,13 @@ import styled from "styled-components";
 
 const Container = styled.div`
   position: relative;
-  height: 1330px;
+  height: 100vh;
 `;
 
 const ArrowBack = styled.div`
   position: absolute;
   width: 24px;
-  height: 24px;
+  height: 24px; 
   left: 24px;
   top: 44px;
   cursor: pointer;

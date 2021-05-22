@@ -1,16 +1,13 @@
 import styled from "styled-components";
 
 const ContBotonAgregarCar = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  display: grid;
+  place-items: center;
   padding: 16px 24px;
-
   position: absolute;
-  width: 360px;
   height: 101px;
   left: 0px;
-  bottom: 0px;
+  bottom: -425px;
 `;
 
 const BotonAgregarCar = styled.button`
@@ -19,12 +16,8 @@ const BotonAgregarCar = styled.button`
   justify-content: space-between;
   align-items: center;
   padding: 24px;
-
-  position: static;
   width: 312px;
   height: 69px;
-  left: 24px;
-  top: 16px;
 
   /* Primary */
   border: none;
@@ -35,7 +28,7 @@ const BotonAgregarCar = styled.button`
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 10px 0px;
+  margin: 1.5rem 0;
 `;
 
 const AgregarBoton = styled.span`

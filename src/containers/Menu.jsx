@@ -7,12 +7,13 @@ import {
   SearchImput,
   CategorieItems,
   CategorieItem,
+  MainContainer
 } from "../styles/MainSectionStyled";
 import CategorieList from "../components/CategorieList";
 
 const Menu = () => {
   return (
-    <div>
+    <>
       <MainRow>
         <LogoImg src="https://i.ibb.co/DMV99gF/title.png" />
         <i>Ca</i>
@@ -33,7 +34,7 @@ const Menu = () => {
         <CategorieItem>Tamales</CategorieItem>
       </CategorieItems>
       <CategorieList> </CategorieList>
-    </div>
+    </>
   );
 };
 

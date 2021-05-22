@@ -26,7 +26,7 @@ const DetailCombo = styled.div`
   flex: none;
   order: 1;
   flex-grow: 0;
-  margin: 8px 0px;
+  margin: 1.3rem 0px;
 `;
 
 const HeaderCombo = styled.div`

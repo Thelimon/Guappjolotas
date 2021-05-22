@@ -16,6 +16,7 @@ const ContSabores = styled.div`
 const ContCard = styled.div`
   display: grid;
   grid-gap: 4rem;
+  place-items: center;
   grid-template-columns: repeat(3, 1fr);
   width: 312px;
 `;
