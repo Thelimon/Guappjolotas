@@ -142,4 +142,3 @@ export default class Menu extends Component {
         )
     }
 }
-
